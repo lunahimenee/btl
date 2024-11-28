@@ -1,5 +1,5 @@
 // Kiểm tra nếu người dùng đã đăng nhập
-if (localStorage.getItem('loggedIn') !== 'true') {
+if (localStorage.getItem('loggedIn') === 'true') {
     alert('Vui lòng đăng nhập để tiếp tục.');
     window.location.href = 'checkout.html'; // Quay lại trang đăng nhập nếu chưa đăng nhập
   }
