@@ -28,7 +28,7 @@ if (localStorage.getItem('loggedIn') !== 'true') {
     // Lưu thông tin khách hàng vào localStorage hoặc gửi lên server
   });
 
-  // Xử lý sự kiện khi người dùng nhấn nút thanh toán
+  // Xử lý sự kiện khi người dùng nhấn nút thanh toánn
   const checkoutButton = document.getElementById('checkout-button');
   checkoutButton.addEventListener('click', function() {
     if (cart.length === 0) {
