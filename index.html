@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thời trang cao cấp HemiGown</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <!--Thông báo khi thêm vào giỏ hàng-->
+  <div class="notification">
+    Sản phẩm đã được thêm vào giỏ hàng
+  </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="./assets/img/logo/logo-hemi.jpg" alt="Logo Hemi" style="height: 60px; width: auto;">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#products">Sản phẩm</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+        <li><a href="#reviews">Đánh giá</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <span class="cart-icon">🛒</span>
+      <span class="cart-count">0</span>
+    </div>
+  </header>
+  <div class="cart-details">
+    <h4>Giỏ hàng của bạn</h4>
+    <ul class="cart-items"></ul> 
+    <a href="checkout.html" style="text-decoration: none; color: white;">
+      <button href="checkout.html" class="checkout-btn">Thanh toán</button>
+    </a>
+    <button class="close-cart-btn">Đóng</button>
+  </div>
+  <!--Main content-->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+        <h1>Thời trang vượt thời gian</h1>
+        <p>Cùng duyệt qua bộ sưu tập thiết kế những chiếc đầm dạ hội tuyệt vời và đầy sang trọng của chúng tôi.</p>
+        <a href="#products" class="btn">Tới shop</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <h2>Giới thiệu về chúng tôi</h2>
+        <p>Hemi shop chúng tôi là brand hoàn toàn mới, nơi cung cấp tới những cô gái những sản phẩm thời trang độc quyền bởi nhà thiết kế tài năng. Chúng tôi cung cấp trang phục dạ hội và trang phục thường ngày khiến các cô gái trở nên đặc biệt và tự tin trong thiết kế tuyệt diệu nhất.</p>
+        <p>Toàn bộ thiết kế trong trang web thuộc về bản quyền của chúng tôi, được thiết kế tâm huyết với  chất liệu chất lượng cao cùng niềm đam mê thời trang mãnh liệt.</p>
+      </section>
+
+      <!-- Products Section -->
+      <section id="products" class="products">
+        <h2>Thiết kế của chúng tôi</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="./assets/img/sanpham/2df54640-dc65-4dc6-8007-631dd8f23806.jpg" alt="Design 1">
+            <h3>Hope For Green Gown</h3>
+            <p class="price">50.000.000đ</p>
+            <button class="add-to-cart" data-name="Hope For Green Gown" data-price="50.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Chiếc đầm mang màu greenmint xẻ tà trái đầy thanh lịch.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/4f1b3f4d-5566-4cd4-9593-78949ed4f42b.jpg" alt="Design 2">
+            <h3>Bling Gown</h3>
+            <p class="price">40.000.000đ</p>
+            <button class="add-to-cart" data-name="Bling Gown" data-price="40.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Chiếc đầm mang tông màu nude xẻ tà chính giữa tôn đôi chân dài.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/18f27db5-518c-4d4a-aad2-50a8ebde2d92.jpg" alt="Design 3">
+            <h3>Night Light Gown</h3>
+            <p class="price">60.000.000đ</p>
+            <button class="add-to-cart" data-name="Night Light Gown" data-price="60.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Màn đêm và những vì tinh tú, cắt xẻ tà phải cao nhưng vẫn thanh lịch.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/1f879db5-ed71-495e-a5e6-44510f0bef5c.jpg" alt="Design 4">
+            <h3>Starlight Gown</h3>
+            <p class="price">100.000.000đ</p>
+            <button class="add-to-cart" data-name="Starlight Gown" data-price="100.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Chiếc đầm đính kết tỉ mỉ, tà gắn bên trái dễ dàng tung hiệu ứng chuyển động.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/6b730ec6-c2b7-48a0-8a77-0059f17f24e0.jpg" alt="Design 5">
+            <h3>Helloworld Gown</h3>
+            <p class="price">50.000.000đ</p>
+            <button class="add-to-cart" data-name="Helloworld Gown" data-price="50.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Đầm cúp ngực, phần eo được cắt và ôm eo siêu hack dáng.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/f3562049-c20c-40a7-853b-e347dbc4e780.jpg" alt="Design 6">
+            <h3>Gloria Gown</h3>
+            <p class="price">70.000.000đ</p>
+            <button class="add-to-cart" data-name="Gloria Gown" data-price="70.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Thiết kế mới độc lạ nhưng vẫn tôn dáng, phù hợp với sự nâng cấp khác biệt.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/3ea77c5c-342b-4206-8ace-42c7840417ff.jpg" alt="Design 7">
+            <h3>Sophie Light Gown</h3>
+            <p class="price">50.000.000đ</p>
+            <button class="add-to-cart" data-name="Sophie Light Gown" data-price="50.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Thiết kế đơn giản nhưng có chút xuyên thấu kết hợp tua rua kim cương hai bên vai.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/80ca1e72-a054-4bc2-b834-4a3ec38f6491.jpg" alt="Design 8">
+            <h3>The Universes Gown</h3>
+            <p class="price">50.000.000đ</p>
+            <button class="add-to-cart" data-name="The Universes Gown" data-price="50.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Dài ngân hà bao quanh thân váy, cô gái sẵn sàng để vũ trụ ôm lấy cơ thể.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/1883dd7a-2e8a-424b-982f-df5bc0f9d283.jpg" alt="Design 9">
+            <h3>Nightlight Gown</h3>
+            <p class="price">80.000.000đ</p>
+            <button class="add-to-cart" data-name="Nightlight Gown" data-price="80.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Sao đêm thắp sáng đêm trời tỏa muôn ngàn hào quang lung linh.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/cf422a86-c88c-4e9e-ac5a-0ff122427cfc.jpg" alt="Design 10">
+            <h3>Sakura Gown</h3>
+            <p class="price">150.000.000đ</p>
+            <button class="add-to-cart" data-name="Sakura Gown" data-price="150.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">5225 bông hoa anh đào gắn kết tỉ mỉ đính kèm 102 viên ngọc trai sáng .</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/17b6fbd0-f9f1-4d8f-9930-38f419e782cf.jpg" alt="Design 11">
+            <h3>Women's Innovative Vest</h3>
+            <p class="price">25.000.000</p>
+            <button class="add-to-cart" data-name="Women's Innovative Vest" data-price="25.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Bộ vest trắng đen màu đối nghịch, có đính lớp xuyên thấu giữa hai bên cổ áo.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/3b09d95e-b2c6-4478-8cba-d999902323a0.jpg" alt="Design 12">
+            <h3>Sleeveless Shirt & Trousers </h3>
+            <p class="price">25.000.000đ</p>
+            <button class="add-to-cart" data-name="Sleeveless Shirt & Trousers" data-price="25.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Một sự phối hợp quần áo đầy cá tính nhưng tôn dáng tuyệt đối.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/2e66ddd5-d769-468c-a7d0-1ee24118319b.jpg" alt="Design 13">
+            <h3>Fire Gown</h3>
+            <p class="price">100.000.000đ</p>
+            <button class="add-to-cart" data-name="Fire Gown" data-price="100.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Khoác trên mình màu đỏ rực rỡ với hàng ngàn viên đá quý lấp lánh.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/df9510ba-d9c6-4136-aa9b-6d8abd4109de.jpg" alt="Design 14">
+            <h3>The Angel Gown</h3>
+            <p class="price">125.000.000đ</p>
+            <button class="add-to-cart" data-name="The Angel Gown" data-price="125.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Sự phối hợp hoàn mĩ giữa ngọc trai đính kết tỉ mỉ và hai tà áo xanh tôn sự sang trọng .</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/0368b918-8069-4346-aac4-9942cd3fb4e9.jpg" alt="Design 15">
+            <h3>Golden Wing Gown</h3>
+            <p class="price">55.000.000đ</p>
+            <button class="add-to-cart" data-name="Golden Wing Gown" data-price="55.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Áp dụng kĩ thuật khối tạo cảm giác 3D cho phần thân váy tạo cảm giác quý phái .</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/5681b92b-f435-42eb-9feb-555360e40bf5.jpg" alt="Design 16">
+            <h3>Wing Of The Goddess </h3>
+            <p class="price">75.000.000đ</p>
+            <button class="add-to-cart" data-name="Wing Of The Goddess" data-price="75.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">In trên mình mẫu đầm đặc biệt với từng chiếc lông ánh vàng đối xứng và tua rua hai bên vai.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/53cc79c9-855d-4c5b-8c14-05cded851ecc.jpg" alt="Design 17">
+            <h3>Belong To U-niverse Gown</h3>
+            <p class="price">200.000.000đ</p>
+            <button class="add-to-cart" data-name="Belong To U-niverse Gown" data-price="200.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Lần đầu thiết kễ mấu đính kết hơn 20.000 viên đá quý và kim cương có độ xuyên phủ cao.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/330c8b96-9ca6-45a2-aed8-c1934458c649.jpg" alt="Design 18">
+            <h3>Purple Rose Gowm</h3>
+            <p class="price">50.000.000đ</p>
+            <button class="add-to-cart" data-name="Purple Rose Gown" data-price="50.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Đầm tím sang trọng, đầm tính cao cấp với hoa hồng in nổi trên vải lụa tím.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/09d5b2b6-ff9b-49a7-a737-0ca966cc1abe (1).jpg" alt="Design 19">
+            <h3>Red Rose Gown</h3>
+            <p class="price">75.000.000đ</p>
+            <button class="add-to-cart" data-name="Red Rose Gown" data-price="75.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Hoa hồng in trên nền đỏ, liệu có nhấn chìm mọi thứ nơi chiếc đầm đi qua.</p>
+          </div>
+          <div class="product-card">
+            <img src="./assets/img/sanpham/03f225b3-1faa-44ed-9eaf-a7728c488574.jpg" alt="Design 20">
+            <h3>Rising Dress </h3>
+            <p class="price">25.000.000đ</p>
+            <button class="add-to-cart" data-name="Rising Dress" data-price="25.000.000">Thêm vào giỏ hàng</button>
+            <p class="description">Trang phục tham dự các sự kiện, tuy đơn giản nhưng phần tà được nâng cấp nhiều chi tiết.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Thêm vào phần Reviews -->
+      <section id="reviews" class="reviews">
+        <h2>Đánh giá của khách hàng</h2>
+        <div class="review-cards">
+          <div class="review-card"></div>
+        </div>
+        
+        <div class="add-review">
+          <h3>Thêm đánh giá của bạn</h3>
+          <input type="text" id="reviewer-name" placeholder="Tên của bạn" required>
+          <textarea id="review-text" placeholder="Đánh giá của bạn" required></textarea>
+          <button id="submit-review">Gửi đánh giá</button>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2>Liên hệ với chúng tôi bằng cách để lại thông tin của bạn ngay bên dưới. Chúng tôi luôn theo dõi và biết ơn những đóng góp của mọi người và cố gắng phát triển hơn nữa trong tương lai.</h2>
+      </section>
+    
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__info">
+      <p>&copy; 2024 Fashion Design Store</p>
+    </div>
+      <div class="footer__header">
+        <ul class="footer__header-info">
+          <li class="footer__header-head">
+            <a href="https://www.facebook.com/profile.php?id=100033374117365&mibextid=ZbWKwL" class="footer__header-fb">Liên hệ qua Facebook
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/invites/contact/?igsh=10vnjosjneg5n&utm_content=ipvkxy4" class="footer__header-ig">Liên hệ qua Instagram
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    <p class="footer__contact-sdt">Điện thoại: (+84) 962 327 511</p>
+    <p class="footer__contact-sdt">Email: qvu72627@gmail.com</p>
+    <p class="footer__contact-sdt">Địa chỉ: Tầng 3, Tòa nhà Hemi●NoWin 100 Quan Hoa, Cầu Giấy, Hà Nội. </p>
+  </footer>
+
+  <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>
